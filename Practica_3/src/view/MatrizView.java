@@ -34,14 +34,14 @@ public class MatrizView extends javax.swing.JDialog {
             controller = new Matriz_controller(filas, columnas);
             controller.llenarMatrizAleatorio();
 
-            actualizarTabla(); // ✔ Usa método simple
+            actualizarTabla(); 
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Ingrese valores válidos para filas y columnas.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
     private void actualizarTabla() {
-        modelo.actualizarDesdeEnteros(controller.getDatos()); // ✔ Modelo hace todo
+        modelo.actualizarDesdeEnteros(controller.getDatos()); 
     }
 
     private void botonEliminar() {
