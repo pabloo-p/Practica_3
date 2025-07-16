@@ -19,7 +19,7 @@ public class ModeloMatriz extends AbstractTableModel {
             }
         }
 
-        fireTableStructureChanged(); // ✔ Notifica a la vista para redibujar
+        fireTableStructureChanged(); 
     }
 
     public void setMatriz(Object[][] nuevaMatriz) {
